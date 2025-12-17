@@ -33,11 +33,11 @@ namespace Quiz05___Methods
         private void productNumber()
 
         {
-            int sum = 0;
-            for (int i = 45; i > 50; i++)
-            {
-                productNumber();
-            }
+            int num1 = 45;
+            int num2 = 50;
+            int product = num1 * num2;
+
+            outputLabel.Text = product.ToString();
 
 
 
@@ -47,12 +47,12 @@ namespace Quiz05___Methods
 
         private void outputLabel_Click(object sender, EventArgs e)
         {
-            outputLabel.Text = productNumber.ToString();
+           
         }
 
         private void q2Button_Click(object sender, EventArgs e)
         {
-
+            productNumber();
         }
     }
 }
