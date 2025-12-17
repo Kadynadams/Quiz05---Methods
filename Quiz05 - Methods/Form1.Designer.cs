@@ -64,6 +64,7 @@
             outputLabel.Name = "outputLabel";
             outputLabel.Size = new Size(547, 55);
             outputLabel.TabIndex = 1;
+            outputLabel.Click += outputLabel_Click;
             // 
             // label2
             // 
@@ -78,7 +79,7 @@
             label3.ForeColor = Color.FromArgb(0, 64, 0);
             label3.Location = new Point(1, 29);
             label3.Name = "label3";
-            label3.Size = new Size(355, 58);
+            label3.Size = new Size(355, 131);
             label3.TabIndex = 3;
             label3.Text = "When the user hits the button, a random number between 1 and 10 will be generated, then displayed in outputLabel";
             // 
@@ -86,36 +87,38 @@
             // 
             q1Button.BackColor = Color.Maroon;
             q1Button.ForeColor = Color.White;
-            q1Button.Location = new Point(30, 78);
+            q1Button.Location = new Point(68, 112);
             q1Button.Name = "q1Button";
-            q1Button.Size = new Size(288, 23);
+            q1Button.Size = new Size(288, 38);
             q1Button.TabIndex = 4;
             q1Button.Text = "Code Me";
             q1Button.UseVisualStyleBackColor = false;
+            q1Button.Click += q1Button_Click;
             // 
             // q2Button
             // 
             q2Button.BackColor = Color.Maroon;
             q2Button.ForeColor = Color.White;
-            q2Button.Location = new Point(30, 402);
+            q2Button.Location = new Point(427, 402);
             q2Button.Name = "q2Button";
-            q2Button.Size = new Size(288, 23);
+            q2Button.Size = new Size(288, 59);
             q2Button.TabIndex = 7;
             q2Button.Text = "Code Me";
             q2Button.UseVisualStyleBackColor = false;
+            q2Button.Click += q2Button_Click;
             // 
             // label4
             // 
             label4.ForeColor = Color.FromArgb(0, 64, 0);
             label4.Location = new Point(1, 185);
             label4.Name = "label4";
-            label4.Size = new Size(355, 84);
+            label4.Size = new Size(355, 149);
             label4.TabIndex = 6;
             label4.Text = resources.GetString("label4.Text");
             // 
             // label5
             // 
-            label5.Location = new Point(1, 139);
+            label5.Location = new Point(1, 153);
             label5.Name = "label5";
             label5.Size = new Size(355, 37);
             label5.TabIndex = 5;
@@ -124,9 +127,9 @@
             // label6
             // 
             label6.ForeColor = Color.FromArgb(0, 64, 0);
-            label6.Location = new Point(1, 285);
+            label6.Location = new Point(1, 334);
             label6.Name = "label6";
-            label6.Size = new Size(355, 100);
+            label6.Size = new Size(355, 111);
             label6.TabIndex = 8;
             label6.Text = resources.GetString("label6.Text");
             // 
@@ -162,14 +165,14 @@
             // 
             aTextBox.Location = new Point(413, 179);
             aTextBox.Name = "aTextBox";
-            aTextBox.Size = new Size(100, 23);
+            aTextBox.Size = new Size(100, 27);
             aTextBox.TabIndex = 12;
             // 
             // bTextBox
             // 
             bTextBox.Location = new Point(601, 179);
             bTextBox.Name = "bTextBox";
-            bTextBox.Size = new Size(100, 23);
+            bTextBox.Size = new Size(100, 27);
             bTextBox.TabIndex = 13;
             // 
             // label9
@@ -216,7 +219,7 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(758, 548);
